@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Cuts Barbershop | Premium Men's Grooming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">✂️ </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Precision Cuts, Premium Style</h1>
+            <p>Where tradition meets modern grooming excellence</p>
+            <a href="#contact" class="cta-button">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Classic Haircut</h3>
+                    <p>Expert scissor cuts tailored to your style and face shape</p>
+                    <span class="price">$35</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪒</div>
+                    <h3>Hot Towel Shave</h3>
+                    <p>Traditional straight razor shave with premium products</p>
+                    <span class="price">$40</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💈</div>
+                    <h3>Beard Trim & Shape</h3>
+                    <p>Professional beard sculpting and maintenance</p>
+                    <span class="price">$25</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⭐</div>
+                    <h3>The Executive</h3>
+                    <p>Haircut + Hot Shave + Facial Treatment (90 min)</p>
+                    <span class="price">$85</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👦</div>
+                    <h3>Kids Cut (Under 12)</h3>
+                    <p>Patient and fun haircuts for the younger generation</p>
+                    <span class="price">$25</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Hair Design</h3>
+                    <p>Fades, tapers, line-ups and custom designs</p>
+                    <span class="price">$45+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Recent Work</h2>
+            <p class="gallery-subtitle">Check out our latest cuts and styles</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder-image">Before & After</div>
+                    <p>Classic Fade</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image">Before & After</div>
+                    <p>Beard Sculpt</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image">Before & After</div>
+                    <p>Textured Crop</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image">Before & After</div>
+                    <p>Skin Fade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="about">
+        <div class="container">
+            <h2>Why Choose Elite Cuts?</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🏆 Master Barbers</h3>
+                    <p>15+ years combined experience in classic and modern techniques</p>
+                </div>
+                <div class="feature">
+                    <h3>⚡ Walk-ins Welcome</h3>
+                    <p>No appointment? No problem. We also offer online booking</p>
+                </div>
+                <div class="feature">
+                    <h3>🎯 Attention to Detail</h3>
+                    <p>Every cut is customized to suit your lifestyle and preferences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Book Your Appointment</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p>📍 123 Main Street<br>Your City, ST 12345</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>📧 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="30595e565f70555c594455534544435251425255421e535f5d">[email&#160;protected]</a></p>
+                    <h3 style="margin-top: 2rem;">Hours</h3>
+                    <p>Mon-Fri: 9am - 7pm<br>
+                    Saturday: 9am - 6pm<br>
+                    Sunday: 10am - 4pm</p>
+                </div>
+                <form class="contact-form" name="appointments" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="appointments">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <select name="service" required>
+                        <option value="">Select Service</option>
+                        <option value="classic">Classic Haircut - $35</option>
+                        <option value="shave">Hot Towel Shave - $40</option>
+                        <option value="beard">Beard Trim - $25</option>
+                        <option value="executive">The Executive - $85</option>
+                        <option value="kids">Kids Cut - $25</option>
+                        <option value="design">Hair Design - $45+</option>
+                    </select>
+                    <textarea name="message" placeholder="Preferred date/time or special requests" rows="3"></textarea>
+                    <button type="submit" class="cta-button">Request Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elite Cuts Barbershop. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-si
